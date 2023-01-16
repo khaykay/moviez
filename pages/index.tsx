@@ -1,8 +1,4 @@
 import Head from 'next/head'
-// import axios from "axios"
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
 import { useState, useEffect } from 'react'
 
 
@@ -49,16 +45,17 @@ const index:React.FC = () => {
   <Head>
     <title>moviez</title>
   </Head>
-  <div className= " container b">
-  <input type="text" placeholder='search' onChange={(e)=>setSearchInput(e.target.value)} />
+  <div className= " flex flex-col items-center justify-center h-screen bg-gradient-to-r from-cyan-500 to-blue-500">
+  <input type="text" placeholder='search' className="w-3/4 h-10 rounded-xl sm:w-1/3" onChange={(e)=>setSearchInput(e.target.value)} />
 
     <>{
        APIdata?.map((data:any)=>{
-   return <div>{data?.Title}</div>
+   return <div>
+          {data?.Title}
+          {data?.Year}</div>
       })
       }
     </>
- <div> hello</div>
   </div>
   </>
    
