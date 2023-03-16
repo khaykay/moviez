@@ -43,6 +43,7 @@ const index: React.FC = () => {
 
   return (
     <>
+      {/* life saver */}
       <Head>
         <title>moviez</title>
         <link
@@ -67,7 +68,6 @@ const index: React.FC = () => {
               <span className="font-['Rowdies'] font-bold text-6xl text-white px-4 inline-flex flex-col gap-2">
                 <span className=""> Find your</span>
                 <span className="">Favorite movie</span>
-               
               </span>
               <input
                 type="search"
