@@ -43,7 +43,6 @@ const index: React.FC = () => {
 
   return (
     <>
-      {/* life saver */}
       <Head>
         <title>moviez</title>
         <link
